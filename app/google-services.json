@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "6634879344",
+    "firebase_url": "https://melection-fyp-default-rtdb.firebaseio.com",
+    "project_id": "melection-fyp",
+    "storage_bucket": "melection-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6634879344:android:a11a2c97f230d25c0977b5",
+        "android_client_info": {
+          "package_name": "com.example.melection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6634879344-0ngvek2u1cps9fs0fbg4rf1kd3121ckp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSIAGjNG9dHK-wwHmOLX7nJixmNsPdqqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6634879344-0ngvek2u1cps9fs0fbg4rf1kd3121ckp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

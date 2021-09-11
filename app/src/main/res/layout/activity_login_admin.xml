@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_blue"
+    tools:context=".LoginAdmin">
+
+    <TextView
+        android:id="@+id/txt_welcome_login_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:padding="0dp"
+        android:text="Welcome Back"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_login_admin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_details_login_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Enter Your Details"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_welcome_login_admin" />
+
+    <ImageView
+        android:id="@+id/image_view_bg_login_admin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/card_bg_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_login_admin" />
+
+    <Button
+        android:id="@+id/btn_login_admin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Login"
+        android:textSize="16sp"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_bg_login_admin"
+        app:layout_constraintStart_toStartOf="@+id/image_view_bg_login_admin"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password_for_login_admin" />
+
+    <EditText
+        android:id="@+id/edt_email_for_login_admin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_bg"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/lbl2_login_admin"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_bg_login_admin"
+        app:layout_constraintStart_toStartOf="@+id/image_view_bg_login_admin" />
+
+    <EditText
+        android:id="@+id/edt_password_for_login_admin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/btn_bg"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_bg_login_admin"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_bg_login_admin"
+        app:layout_constraintStart_toStartOf="@+id/image_view_bg_login_admin"
+        app:layout_constraintTop_toTopOf="@+id/image_view_bg_login_admin" />
+
+    <TextView
+        android:id="@+id/txt_error_for_login_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="{error}"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_bg_login_admin"
+        app:layout_constraintStart_toStartOf="@+id/image_view_bg_login_admin"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_admin" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_login_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <TextView
+        android:id="@+id/lbl1_login_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Please Enter Your Email"
+        android:textColor="@color/custom_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edt_email_for_login_admin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl2_login_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Please Enter Your Password"
+        android:textColor="@color/custom_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edt_password_for_login_admin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

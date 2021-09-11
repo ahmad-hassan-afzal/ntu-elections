@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_blue"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/txt_welcome_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:padding="0dp"
+        android:text="Welcome Back"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_login_admin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_details_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Enter Your Details"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_login_admin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_welcome_login"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <ImageView
+        android:id="@+id/image_view_bg_login"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/card_bg_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_login_admin" />
+
+    <ImageView
+        android:id="@+id/image_reg_no_for_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintBottom_toTopOf="@+id/lbl2_login"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_bg_login"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/image_view_bg_login" />
+
+    <EditText
+        android:id="@+id/edt_reg_for_login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Reg No."
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="5dp"
+        android:textColor="@color/custom_black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_reg_no_for_login"
+        app:layout_constraintEnd_toEndOf="@+id/image_reg_no_for_login"
+        app:layout_constraintTop_toTopOf="@+id/image_reg_no_for_login" />
+
+    <Spinner
+        android:id="@+id/spnr_batch_for_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:padding="5dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/image_reg_no_for_login"
+        app:layout_constraintStart_toStartOf="@+id/image_reg_no_for_login"
+        app:layout_constraintTop_toTopOf="@+id/image_reg_no_for_login" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Login"
+        android:textSize="16sp"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_bg_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image_view_bg_login"
+        app:layout_constraintTop_toBottomOf="@+id/txt_forgot_password" />
+
+    <EditText
+        android:id="@+id/edt_password_for_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_bg"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_bg_login"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_bg_login"
+        app:layout_constraintStart_toStartOf="@+id/image_view_bg_login"
+        app:layout_constraintTop_toTopOf="@+id/image_view_bg_login" />
+
+    <TextView
+        android:id="@+id/txt_register_for_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="startSignUpActivity"
+        android:text="not registered? SignUp"
+        android:textColor="@color/custom_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_bg_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/txt_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="forgotPassword"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/custom_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password_for_login"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password_for_login" />
+
+    <TextView
+        android:id="@+id/txt_error_for_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="{error}"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_bg_login"
+        app:layout_constraintStart_toStartOf="@+id/image_view_bg_login"
+        app:layout_constraintTop_toBottomOf="@+id/txt_register_for_login" />
+
+    <Spinner
+        android:id="@+id/spnr_section_for_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_reg_no_for_login"
+        app:layout_constraintEnd_toStartOf="@+id/edt_reg_for_login"
+        app:layout_constraintStart_toEndOf="@+id/spnr_batch_for_login"
+        app:layout_constraintTop_toTopOf="@+id/image_reg_no_for_login" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_login_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <TextView
+        android:id="@+id/lbl1_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Please Select Your Batch, Section "
+        android:textColor="@color/custom_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/image_reg_no_for_login"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl2_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Please Enter Your Password"
+        android:textColor="@color/custom_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edt_password_for_login"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
